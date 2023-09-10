@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Inter&family=Pacifico&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* 
+font-family: 'Allura', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Pacifico', cursive; */
+body {
+	font-family: 'Inter', sans-serif;
+}

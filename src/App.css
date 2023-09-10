@@ -1,0 +1,789 @@
+.App {
+	height: 480px;
+	width: 480px;
+	/* background-color: rgb(239, 251, 255); */
+	/* border: 2px solid black; */
+	padding: 20px;
+}
+
+a.active {
+	/* border: 2px solid b */
+	background-color: #0000ff !important;
+	color: white !important;
+}
+
+.footer a {
+	text-decoration: none;
+	font-family: 'Pacifico', cursive;
+	color: black;
+}
+
+.header {
+	/* background: -webkit-linear-gradient(#eee, #333); */
+	-webkit-background-clip: text !important;
+	-webkit-text-fill-color: transparent;
+}
+
+.navbar {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin: 20px 0px;
+}
+
+.navbar a {
+	text-decoration: none;
+	background-color: lightgray;
+	padding: 4px 12px;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	color: black;
+	cursor: pointer;
+	padding: 8px 12px;
+}
+
+.navbar a:hover {
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.shimmer-palates-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.shimmer-palates-container .random-palates-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.shimmer-palates-container .random-palates-container div {
+	margin: 5px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	background-color: lightgray;
+	height: 100px;
+	width: 190px;
+}
+
+.shimmer-gradient-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0px;
+}
+
+.shimmer-gradient-container .random-gradient-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.shimmer-gradient-container .random-gradient-container div {
+	margin: 5px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	background-color: lightgray;
+	height: 160px;
+	width: 390px;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	/* padding: 5px; */
+	background-color: #f2f2f2;
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+}
+
+.reload {
+	background-color: transparent;
+	border: none;
+	/* width: 10px; */
+	cursor: pointer;
+}
+.reload-image {
+	width: 30px;
+}
+
+.random-gradient {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.random-gradient .btn-container {
+	display: flex;
+	height: 100%;
+	justify-content: space-around;
+	align-items: center;
+	background-color: transparent !important;
+}
+
+.random-gradient .btn-container .gradient-action-btn {
+	padding: 8px 12px;
+	background-color: rgba(0, 0, 0, 0.13);
+	color: white;
+	border: 2px solid transparent;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	cursor: pointer;
+}
+
+.random-gradient .btn-container .gradient-action-btn {
+	text-decoration: none;
+	color: white;
+}
+
+.random-gradient .btn-container .gradient-action-btn:hover {
+	background-color: rgba(0, 0, 0, 0.534);
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.random-gradient p {
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.13);
+	width: 100%;
+	color: white;
+	text-align: center;
+	border-radius: 0px 0px 10px 10px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	-ms-border-radius: 0px 0px 10px 10px;
+	-o-border-radius: 0px 0px 10px 10px;
+}
+
+.palate-container {
+	/* margin: 0 auto; */
+	width: 190px;
+	/* height: 400px; */
+	/* border: 1px solid lighten(black, 10); */
+	display: flex;
+	align-items: center;
+	/* margin: 10px 0px; */
+	/* margin-bottom: 0px; */
+	/* margin-right: 15px; */
+
+	margin: 5px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	/* background-color: lightgray; */
+	height: 100px;
+	width: 190px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.item {
+	flex-grow: 1;
+	height: 100px;
+	background-color: darkred;
+	position: relative;
+	border: 1px solid lighten(black, 10);
+	transition: all 300ms ease-in-out;
+	width: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.item:first-child {
+	border-radius: 10px 0px 0px 10px;
+	-webkit-border-radius: 10px 0px 0px 10px;
+	-moz-border-radius: 10px 0px 0px 10px;
+	-ms-border-radius: 10px 0px 0px 10px;
+	-o-border-radius: 10px 0px 0px 10px;
+}
+
+.item:last-child {
+	border-radius: 0px 10px 10px 0px;
+	-webkit-border-radius: 0px 10px 10px 0px;
+	-moz-border-radius: 0px 10px 10px 0px;
+	-ms-border-radius: 0px 10px 10px 0px;
+	-o-border-radius: 0px 10px 10px 0px;
+}
+
+.item:hover {
+	flex-grow: 5;
+	background-color: lighten(darkred, 20);
+	/* font-size: 100px; */
+}
+
+.item p {
+	opacity: 0;
+	transition: 0.35 all ease-in-out;
+	-webkit-transition: 0.35 all ease-in-out;
+	-moz-transition: 0.35 all ease-in-out;
+	-ms-transition: 0.35 all ease-in-out;
+	-o-transition: 0.35 all ease-in-out;
+	/*height: 100px;
+	*/
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	font-size: 12px;
+	padding: 4px 8px;
+	background-color: rgba(0, 0, 0, 0.13);
+	cursor: pointer;
+	color: white;
+}
+
+.item:hover p {
+	opacity: 1;
+}
+
+.item p:hover {
+	background-color: rgba(0, 0, 0, 0.534);
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.item:before {
+	content: attr(data-order);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+.item .color-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	padding-top: 5px;
+}
+
+.item .color-details .color-action-btns {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	padding: 10px;
+}
+
+.item .color-details .color-action-btns p:first-child {
+	/* margin-bottom: 10px; */
+}
+
+.gradient-colors-container {
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gradient-colors-container .color-container {
+	height: 80px;
+	width: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	margin: 10px;
+}
+
+.gradient-colors-container .color-container:hover .color-code {
+	display: none;
+}
+
+.gradient-colors-container .color-container p {
+	/* display: none; */
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	font-size: 12px;
+	padding: 4px 8px;
+	background-color: rgba(0, 0, 0, 0.13);
+	cursor: pointer;
+	color: white;
+	margin: 10px;
+}
+
+.gradient-colors-container .color-container .gradient-color-action-btns {
+	display: none;
+}
+
+.gradient-colors-container .color-container:hover .gradient-color-action-btns {
+	display: block;
+}
+
+.gradient-colors-container .color-container p:hover {
+	background-color: rgba(0, 0, 0, 0.534);
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.gradient-colors-container .color-container:hover p {
+	display: block;
+}
+
+/* Single Gradient  */
+.single-gradient-container .single-gradient-name {
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.135);
+	font-size: 12px;
+	width: 100%;
+	color: white;
+	text-align: center;
+	border-radius: 0px 0px 10px 10px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	-ms-border-radius: 0px 0px 10px 10px;
+	-o-border-radius: 0px 0px 10px 10px;
+}
+
+/******************* Explore Palates Page */
+.explore-palates-container {
+	display: flex;
+	/* justify-content: center; */
+	/* align-items: center; */
+	flex-direction: column;
+	width: 450px;
+	/* flex-wrap: wrap; */
+	height: 330px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	padding: 10px;
+}
+
+.explore-palates-container .palate-container {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.explore-palates-container .palate-details {
+	display: flex;
+	margin-bottom: 10px;
+	justify-content: space-between;
+	padding: 5px 0px;
+}
+
+.explore-palates-container .palate-details .palate-name {
+	font-size: 13px;
+	font-family: 'Pacifico', cursive;
+}
+
+.explore-palates-container .single-palate-btn-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.explore-palates-container .single-palate-btn-container p {
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	font-size: 12px;
+	padding: 4px 8px;
+	background-color: rgba(0, 0, 0, 0.253);
+	cursor: pointer;
+	color: white;
+	font-size: 12px;
+}
+
+.explore-palates-container .single-palate-btn-container p:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.explore-palates-container .single-palate-btn-container p:first-child {
+	/* margin-right: 10px; */
+}
+
+/******************* Explore Gradient Page */
+.explore-gradients-container {
+	display: flex;
+	/* justify-content: center; */
+	/* align-items: center; */
+	flex-direction: column;
+	width: 450px;
+	/* flex-wrap: wrap; */
+	height: 330px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	padding: 10px;
+}
+
+.explore-gradients-container .gradient-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	height: 200px;
+}
+
+.explore-gradients-container .gradient-container {
+	margin: 10px 0px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.explore-gradients-container .gradient-container .gradient {
+	margin: 5px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	height: 160px;
+	width: 390px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.explore-gradients-container .gradient-container .gradient button {
+	display: none !important;
+	padding: 8px 12px;
+	background-color: rgba(0, 0, 0, 0.13);
+	color: white;
+	border: 2px solid transparent;
+	text-decoration: none;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	cursor: pointer;
+}
+
+.explore-gradients-container .gradient-container .gradient a {
+	display: none !important;
+	padding: 8px 12px;
+	background-color: rgba(0, 0, 0, 0.13);
+	color: white;
+	border: 2px solid transparent;
+	text-decoration: none;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	cursor: pointer;
+}
+
+.explore-gradients-container .gradient-container:hover .gradient button {
+	display: block !important;
+}
+
+.explore-gradients-container .gradient-container:hover .gradient a {
+	display: block !important;
+}
+
+.explore-gradients-container .gradient-container:hover .gradient a:hover {
+	background-color: rgba(0, 0, 0, 0.534);
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.explore-gradients-container .gradient-container:hover .gradient button:hover {
+	background-color: rgba(0, 0, 0, 0.534);
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.explore-gradients-container .gradient-container .gradient-name {
+	background-color: rgba(0, 0, 0, 0.205);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	font-size: 10px;
+	color: white;
+	border-radius: 0px 0px 10px 10px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	-ms-border-radius: 0px 0px 10px 10px;
+	-o-border-radius: 0px 0px 10px 10px;
+}
+
+/* ******** SAVED PAGE ****************** */
+.saved-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.saved-container .saved-navbar {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	padding-bottom: 5px;
+}
+
+.saved-container .saved-navbar a {
+	text-decoration: none;
+	color: black;
+	background-color: #d3d3d3;
+	padding: 4px 8px;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+}
+
+/* ********* USER COLORS */
+.user-colors-container {
+	display: flex;
+	/* justify-content: center; */
+	/* align-items: center; */
+	flex-direction: column;
+	width: 450px;
+	/* flex-wrap: wrap; */
+	height: 330px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	padding: 10px;
+}
+.user-colors-container .user-color {
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px;
+	/* padding: 0px 10px; */
+	margin: 10px 0px;
+}
+
+.user-colors-container .user-color p {
+	background-color: rgba(0, 0, 0, 0.13);
+	padding: 5px;
+	font-size: 10px;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.user-colors-container .user-color p img {
+	width: 17px;
+}
+
+.user-colors-container .user-color p.remove-btn {
+	/* border: 2px solid red; */
+	padding: 2px;
+}
+
+.user-colors-container .user-color p:hover {
+	background-color: rgba(0, 0, 0, 0.534);
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	cursor: pointer;
+}
+
+/* ********* Copied Message */
+.copied-msg-container {
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.copied-msg {
+	background-color: hwb(0 0% 100% / 0.797);
+	color: white;
+	padding: 8px 12px;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	font-size: 13px;
+}
+
+/* ********* Saved Message */
+.saved-msg-container {
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.saved-msg {
+	background-color: hwb(0 0% 100% / 0.797);
+	color: white;
+	padding: 8px 12px;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	font-size: 13px;
+}
+
+.saved-msg span {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	padding: 2px;
+}
+
+/* ****** USER GRADIENTS */
+.explore-user-gradients-container {
+	display: flex;
+	/* justify-content: center; */
+	/* align-items: center; */
+	flex-direction: column;
+	width: 450px;
+	/* flex-wrap: wrap; */
+	height: 330px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	padding: 10px;
+}
+
+.explore-user-gradients-container .user-gradient-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	height: 200px;
+}
+
+.explore-user-gradients-container .user-gradient-container {
+	margin: 10px 0px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.explore-user-gradients-container .user-gradient-container .user-gradient {
+	margin: 5px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	height: 160px;
+	width: 390px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.explore-user-gradients-container .user-gradient-container .user-gradient button {
+	display: none !important;
+	padding: 8px 12px;
+	background-color: rgba(0, 0, 0, 0.13);
+	color: white;
+	border: 2px solid transparent;
+	text-decoration: none;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	cursor: pointer;
+}
+
+.explore-user-gradients-container .user-gradient-container .user-gradient a {
+	display: none !important;
+	padding: 8px 12px;
+	background-color: rgba(0, 0, 0, 0.13);
+	color: white;
+	border: 2px solid transparent;
+	text-decoration: none;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	cursor: pointer;
+}
+
+.explore-user-gradients-container .user-gradient-container:hover .user-gradient button {
+	display: block !important;
+}
+
+.explore-user-gradients-container .user-gradient-container:hover .user-gradient a {
+	display: block !important;
+}
+
+.explore-user-gradients-container .user-gradient-container:hover .user-gradient a:hover {
+	background-color: rgba(0, 0, 0, 0.534);
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.explore-user-gradients-container .user-gradient-container:hover .user-gradient button:hover {
+	background-color: rgba(0, 0, 0, 0.534);
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.explore-user-gradients-container .user-gradient-container .gradient-name {
+	background-color: rgba(0, 0, 0, 0.205);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	font-size: 10px;
+	color: white;
+	border-radius: 0px 0px 10px 10px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	-ms-border-radius: 0px 0px 10px 10px;
+	-o-border-radius: 0px 0px 10px 10px;
+}
+
+.no-colors-gradients {
+	padding: 8px 16px;
+	margin: 10px;
+}

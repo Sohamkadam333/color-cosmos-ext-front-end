@@ -1,0 +1,43 @@
+{
+	"manifest_version": 3,
+	"name": "Color Cosmos",
+	"version": "1.0",
+	"description": "Enhance your web design workflow with our Color Palette & Gradient Generator Chrome extension. Create stunning color schemes and gradients for your websites effortlessly. Whether you're a professional web developer or a design enthusiast, our tool simplifies the process of selecting and implementing beautiful color combinations.",
+	"permissions": [
+		"activeTab",
+		"storage",
+		"tabs",
+		"webRequest",
+		"webNavigation",
+		"clipboardWrite",
+		"notifications",
+		"identity",
+		"contextMenus",
+		"cookies",
+		"geolocation",
+		"alarms",
+		"declarativeContent",
+		"nativeMessaging",
+		"unlimitedStorage",
+		"chrome://favicon/"
+	],
+	"action": {
+		"default_popup": "index.html",
+		"default_icon": {
+			"16": "./images/icon16.png",
+			"48": "./images/icon48.png",
+			"128": "./images/icon128.png"
+		}
+	},
+	"icons": {
+		"16": "./images/icon16.png",
+		"48": "./images/icon48.png",
+		"128": "./images/icon128.png"
+	},
+	"web_accessible_resources": [
+		{
+			"resources": ["images/*"],
+			"matches": ["<all_urls>"]
+		}
+	]
+}
